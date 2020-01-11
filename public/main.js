@@ -1,6 +1,12 @@
-fetch('/public/quote')
+fetch('/quote')
   // console.log('hello')
-  .then(r => r.json())
+  // .then(r => console.log('response =>', r))
+  .then((r) => {
+    return r.json()
+  })
+
   .then(data => {
     document.getElementById('quote').innerText = data.quote;
   });
+
+

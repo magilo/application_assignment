@@ -1,5 +1,10 @@
 # Assignment
 
+## Setup
+- Open http://localhost:3000/ in browser
+- type in "npm run start:dev" into command line and hit enter
+- server should be running and displaying a webpage similar to the gif below
+
 ## Objectives
 
 By the end of this project you will:

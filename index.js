@@ -8,7 +8,6 @@ const port = 3000;
 app.use(express.static('public'));
 
 app.get('/quote', (req, res) => {
-  console.log(req)
   res.json({
     quote: quotes.getQuote()
   });
