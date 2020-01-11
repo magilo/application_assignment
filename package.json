@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "npm run build-watch & npm run start-server",
+    "start": "echo 'Running server for production - developers, use npm run start:dev for development' && node main",
+    "start-server": "nodemon --watch server main.js -e html,js,css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "random-movie-quotes": "^1.0.3"
   }
 }
